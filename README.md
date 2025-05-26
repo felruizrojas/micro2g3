@@ -11,7 +11,7 @@ https://github.com/felruizrojas/micro2g3.git
 ## MÉTODOS HTTP
 
 ### GET POR ID:
-localhost:8080/api/cuentas
+localhost:8080/api/cuentas/id/1
 
 ### POST PARA INGRESAR CUENTA:
 localhost:8080/api/cuentas
