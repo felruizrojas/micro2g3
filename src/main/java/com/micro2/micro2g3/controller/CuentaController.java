@@ -44,7 +44,7 @@ public class CuentaController {
         }
     }
 
-    @GetMapping("/id/{id}")
+    @GetMapping("/id/{idCuenta}")
     public ResponseEntity<Cuenta> getCuentaByIdCuenta(@PathVariable int idCuenta) {
         Cuenta cuenta = cuentaService.findByIdCuenta(idCuenta);
         if (cuenta != null) {
