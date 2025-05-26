@@ -53,7 +53,7 @@ public class CuentaController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PutMapping("/id/{id}")
+    @PutMapping("/id/{idCuenta}")
     public ResponseEntity<Cuenta> updateCuentaByIdCuenta(@PathVariable int idCuenta, @RequestBody Cuenta cuenta) {
         Cuenta existente = cuentaService.findByIdCuenta(idCuenta);
         if (existente != null) {
@@ -64,7 +64,7 @@ public class CuentaController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping("/id/{id}")
+    @DeleteMapping("/id/{idCuenta}")
     public ResponseEntity<Void> deleteCuentaByIdCuenta(@PathVariable int idCuenta) {
         Cuenta existente = cuentaService.findByIdCuenta(idCuenta);
         if (existente != null) {

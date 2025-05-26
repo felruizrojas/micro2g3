@@ -19,5 +19,5 @@ public interface CuentaRepository extends JpaRepository<Cuenta, Integer> {
 
     Cuenta findByIdCuenta(int idCuenta);
 
-    void deleteByIdCuenta(int idCuenta);
+    void deleteByIdCuenta(Integer idCuenta);
 }

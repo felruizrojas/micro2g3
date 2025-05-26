@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import com.micro2.micro2g3.model.Cuenta;
 import com.micro2.micro2g3.repository.CuentaRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 
 public class CuentaService {
@@ -27,7 +29,8 @@ public class CuentaService {
         return cuentaRepository.findByIdCuenta(idCuenta);
     }
 
-    public void deleteByIdCuenta(int idCuenta) {
+    @Transactional
+    public void deleteByIdCuenta(Integer idCuenta) {
         cuentaRepository.deleteByIdCuenta(idCuenta);
     }
 }
