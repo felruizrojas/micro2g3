@@ -30,3 +30,4 @@ localhost:8080/api/cuentas/id/1
 }
 
 ### DELETE POR ID:
+localhost:8080/api/cuentas/id/1
